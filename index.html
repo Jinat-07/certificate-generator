@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Certificate Generator</h1>
+
+        <div class="controls">
+            <div class="input-group">
+                <label for="nameInput">Student Name</label>
+                <input type="text" id="nameInput" placeholder="Enter student name">
+            </div>
+            
+            <div class="input-group">
+                <label for="dateInput">Issue Date</label>
+                <input type="text" id="dateInput" placeholder="e.g., August 27, 2026">
+            </div>
+
+            <button id="downloadBtn">Download Certificate</button>
+        </div>
+
+        <div class="preview-container">
+            <div class="certificate" id="certificateBox">
+                <img src="template.png" alt="Certificate Background" class="cert-bg">
+                
+                <div class="cert-text name-text" id="displayName">Student Name</div>
+                <div class="cert-text date-text" id="displayDate">August 27, 2026</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
