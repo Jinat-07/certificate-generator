@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,17 +77,21 @@ button:hover {
 /* Certificate Positioning */
 .preview-container {
     width: 100%;
-    overflow-x: auto; /* Adds scroll if screen is too small */
+    overflow-x: auto; 
     display: flex;
     justify-content: center;
 }
 
 .certificate {
     position: relative;
-    width: 800px;  /* Match your template's width */
-    height: 600px; /* Match your template's height */
+    /* High resolution A4 landscape proportions */
+    width: 1123px;  
+    height: 794px; 
     background: white;
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    /* Scale down slightly for smaller screens while keeping native resolution high */
+    transform-origin: top center;
+    max-width: 100%;
 }
 
 .cert-bg {
@@ -102,25 +106,28 @@ button:hover {
 
 .cert-text {
     position: absolute;
-    z-index: 2; /* Keeps text above the image */
-    width: 100%;
-    text-align: center;
+    z-index: 2;
+    font-family: 'Playfair Display', serif; /* Elegant matching font */
 }
 
-/* Tweak the top % to move the name up and down */
+/* Placed over the golden line in the right section */
 .name-text {
-    top: 45%; 
-    font-family: 'Great Vibes', cursive;
+    top: 43%; 
+    left: 31%; /* Shifts it past the blue sidebar */
+    width: 63%; /* Constrains it perfectly over the line */
+    text-align: center;
     font-size: 3.5rem;
-    color: #1f2937;
+    font-weight: 700;
+    color: #4a453f; /* Dark brown/grey to match your template text */
+    letter-spacing: 1px;
 }
 
-/* Tweak the bottom and left % to move the date */
+/* Placed in the bottom left of the white section, above the MSME logo */
 .date-text {
-    bottom: 15%;
-    left: 20%;
-    width: auto;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #4b5563;
+    bottom: 18%;
+    left: 33%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #4a453f;
+    font-style: italic;
 }
