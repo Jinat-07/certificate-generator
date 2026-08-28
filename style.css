@@ -113,7 +113,7 @@ button:hover {
 /* Placed over the golden line in the right section */
 .name-text {
     top: 43%; 
-    left: 23%; /* Shifts it past the blue sidebar */
+    left: 35%; /* Shifts it past the blue sidebar */
     width: 63%; /* Constrains it perfectly over the line */
     text-align: left;
     font-size: 3.5rem;
