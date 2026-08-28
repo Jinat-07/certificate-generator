@@ -115,7 +115,7 @@ button:hover {
     top: 43%; 
     left: 23%; /* Shifts it past the blue sidebar */
     width: 63%; /* Constrains it perfectly over the line */
-    text-align: center;
+    text-align: left;
     font-size: 3.5rem;
     font-weight: 700;
     color: #4a453f; /* Dark brown/grey to match your template text */
@@ -129,5 +129,5 @@ button:hover {
     font-size: 1.0rem;
     font-weight: 500;
     color: #FFFFFF;
-    font-style: italic;
+    font-family: 'Inter', sans-serif;
 }
